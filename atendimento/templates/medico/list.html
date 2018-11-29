@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="comtainer-fuid">
+    <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/atendimento/">Clinica vital</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,7 +29,7 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="/atendimento/cliente">Cliente</a>
+                        <a class="nav-link" href="/atendimento/cliente">Clientes</a>
                     </li>
 
                     <li class="nav-item active">
@@ -54,19 +54,19 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>NOME</th>
-                            <th>DT NASC</th>
-                            <th>ESPECIALIDADE</th>
-                            <th>SEXO</th>
+                            <th>nome</th>
+                            <th>dt nasc</th>
+                            <th>especialidade</th>
+                            <th>sexo</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for medico in medicos %}
                         <tr>
-                            <td>{{medico.NOME}}</td>
-                            <td>{{medico.DT_NASC}}</td>
-                            <td>{{medico.ESPECIALIDADE}}</td>
-                            <td>{{medico.SEXO}}</td>
+                            <td>{{medico.nome}}</td>
+                            <td>{{medico.dt_nasc}}</td>
+                            <td>{{medico.especialidade}}</td>
+                            <td>{{medico.sexo}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>

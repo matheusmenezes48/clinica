@@ -1,14 +1,14 @@
 from django.db import models
 
 class Cliente(models.Model):
-    NOME = models.CharField(max_length=50)
-    DT_NASC = models.DateField()
-    CPF = models.CharField(max_length=11)
-    SEXO = models.CharField(max_length=1)
+    nome = models.CharField(max_length=50)
+    dt_nasc = models.DateField()
+    cpf = models.CharField(max_length=11)
+    sexo = models.CharField(max_length=1)
 
 class Medico(models.Model):
-    NOME = models.CharField(max_length=50)
-    DT_NASC = models.DateField()
-    ESPECIALIDADE = models.CharField(max_length=25)
-    SEXO = models.CharField(max_length=1)
+    nome = models.CharField(max_length=50)
+    dt_nasc = models.DateField()
+    especialidade = models.CharField(max_length=25)
+    sexo = models.CharField(max_length=1)
 

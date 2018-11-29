@@ -1,8 +1,5 @@
 from django.contrib import admin
-from .models import Cliente
-from .models import Medico
-
-
+from .models import Cliente, Medico
 
 # Register your models here.
 admin.site.register(Cliente)
