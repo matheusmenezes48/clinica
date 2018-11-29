@@ -20,23 +20,26 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
                         <a class="nav-link" href="/atendimento/">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item active">
+
+                    <li class="nav-item ">
                         <a class="nav-link" href="/atendimento/cliente">Cliente</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/atendimento/medico">Medicos</a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="/atendimento/medico">Medicos</a>
                     </li>
 
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Agendamento</a>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -53,22 +56,22 @@
                         <tr>
                             <th>NOME</th>
                             <th>DT NASC</th>
-                            <th>CPF</th>
+                            <th>ESPECIALIDADE</th>
                             <th>SEXO</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for cliente in clientes %}
+                        {% for medico in medicos %}
                         <tr>
-                            <td>{{cliente.NOME}}</td>
-                            <td>{{cliente.DT_NASV}}</td>
-                            <td>{{cliente.CPF}}</td>
-                            <td>{{cliente.SEXO}}</td>
+                            <td>{{medico.NOME}}</td>
+                            <td>{{medico.DT_NASC}}</td>
+                            <td>{{medico.ESPECIALIDADE}}</td>
+                            <td>{{medico.SEXO}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
                 </table>
-                <p>foram encontrados {{clientes| length }} clientes</p>
+                <p>foram encontrados {{medicos| length }} medicos</p>
             </div>
         </div>
 
