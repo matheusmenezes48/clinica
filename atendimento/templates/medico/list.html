@@ -20,7 +20,7 @@
                     <td>{{medico.especialidade}}</td>
                     <td>{{medico.sexo}}</td>
                     <td>
-                        <a href="/atendimento/medico/{{medico.id}}/">ver</a>
+                        <a href="/atendimento/medico/{{medico.id}}/">ver detalhes</a>
                     </td>
                 </tr>
                 {% endfor %}
@@ -28,6 +28,6 @@
         </table>
         <p>foram encontrados {{medicos| length }} medicos</p>
     </div>
-    
+
 </div>
 {% endblock %}
