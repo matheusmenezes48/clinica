@@ -7,4 +7,5 @@ urlpatterns = [
     path('cliente/<int:cliente_id>/',views.cliente_show),
     path('medico/',views.medico_list),
     path('medico/<int:medico_id>/',views.medico_show),
+    path('cliente/create/', views.cliente_create)
 ]

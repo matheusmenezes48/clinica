@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block content %}
+<form action="/atendimento/cliente/save/" method="POST">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input name="nome" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <div>
+            <label for="dt_nasc">Data de Nascimento:</label>
+            <input name="dt_nasc" type="date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input name="cpf" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="sexo">Sexo:</label>
+            <input name="sexo" type="radio" value="M">M
+            <input name="sexo" type="radio" value="F">F
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="">Selecione o Estado</option>
+                <option value="PI">Piauí</option>
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernanbuco</option>
+                <option value="CE">Ceará</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="estadocivil">Casado?</label>
+            <input class="f" type="checkbox" class="form-control">
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" class="btn btn-secondary">Salvar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </div>
+</form>
+
+{% endblock %}
